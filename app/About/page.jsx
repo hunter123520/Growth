@@ -5,8 +5,6 @@ import "../Styles/AboutPage.css";
 import team_img from "../Images/team_img.png";
 import Sellami from "../Images/DEVS/Sellami.jpg";
 import Taher from "../Images/DEVS/Taher.jpg";
-import DJ from "../Images/DEVS/DJ.jpg";
-import TJ from "../Images/DEVS/TJ.jpg";
 import BH from "../Images/DEVS/BH.jpg";
 import unv from "../Images/unv.jpg";
 import TH from "../Images/Thanks.png";
