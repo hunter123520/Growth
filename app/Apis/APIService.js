@@ -2,6 +2,7 @@ export default class APIService {
     // http://127.0.0.1:5000
     // Insert an article
     //https://growth-wine.vercel.app/
+    //https://next-template-pi-kohl.vercel.app/api/
     static detect(body) {
         return fetch(`https://growth-wine.vercel.app/api/detect`, {
             method: 'POST',
