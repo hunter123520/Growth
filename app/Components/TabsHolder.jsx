@@ -173,6 +173,25 @@ import Strawberry7 from "../Images/GC/Strawberry___Leaf_scorch/img2.jpg";
 import Strawberry8 from "../Images/GC/Strawberry___healthy/img4.jpg";
 import Strawberry9 from "../Images/GC/Strawberry___Leaf_scorch/img6.jpg";
 
+// Palm Images
+import DatePalm0 from "../Images/GC/Date_Palm/img2.jpg";
+import DatePalm1 from "../Images/GC/Date_Palm/img6.jpg";
+import DatePalm2 from "../Images/GC/Date_Palm/img1.jpg";
+import DatePalm3 from "../Images/GC/Date_Palm/img9.jpg";
+import DatePalm4 from "../Images/GC/Date_Palm/img10.jpg";
+import DatePalm5 from "../Images/GC/Date_Palm/img3.jpg";
+import DatePalm6 from "../Images/GC/Date_Palm/img5.jpg";
+import DatePalm7 from "../Images/GC/Date_Palm/img4.jpg";
+import DatePalm8 from "../Images/GC/Date_Palm/img7.jpg";
+import DatePalm9 from "../Images/GC/Date_Palm/img8.jpg";
+
+
+// Date Palm
+const date_List = [
+  { img: DatePalm0 }, { img: DatePalm1 }, { img: DatePalm2 }, { img: DatePalm3 }, { img: DatePalm4 },
+  { img: DatePalm5 }, { img: DatePalm6 }, { img: DatePalm7 }, { img: DatePalm8 }, { img: DatePalm9 }
+];
+
 // Apple
 const apple_List = [
   { img: Apple0 }, { img: Apple1 }, { img: Apple2 }, { img: Apple3 }, { img: Apple4 },
@@ -317,36 +336,38 @@ const TabsHolder = () => {
     <Box sx={{ width: '100%' }}>
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs  value={value} onChange={handleChange} centered  >
-        <Tab label={t("Apple")} {...a11yProps(0)} className='Tab' />
-        <Tab label={t("Blueberry")} {...a11yProps(1)} className='Tab'/>
-        <Tab label={t("Cherry")} {...a11yProps(2)} className='Tab'/>
-        <Tab label={t("Corn")} {...a11yProps(3)} className='Tab'/>
-        <Tab label={t("Grape")} {...a11yProps(4)} className='Tab'/>
-        <Tab label={t("Orange" )}{...a11yProps(5)} className='Tab'/>
-        <Tab label={t("Peach")} {...a11yProps(6)} className='Tab'/>
-        <Tab label={t("Pepper bell")} {...a11yProps(7)} className='Tab'/>
-        <Tab label={t("Potato")} {...a11yProps(8)} className='Tab'/>
-        <Tab label={t("Raspberry")} {...a11yProps(9)} className='Tab'/>
-        <Tab label={t("Soybean")} {...a11yProps(10)} className='Tab'/>
-        <Tab label={t("Squash")} {...a11yProps(11)} className='Tab'/>
-        <Tab label={t("Strawberry")} {...a11yProps(12)} className='Tab'/>
-        <Tab label={t("Tomato")} {...a11yProps(13)} className='Tab'/>
+        <Tab label={t("Date Palm")} {...a11yProps(0)} className='Tab' />
+        <Tab label={t("Apple")} {...a11yProps(1)} className='Tab' />
+        <Tab label={t("Blueberry")} {...a11yProps(2)} className='Tab'/>
+        <Tab label={t("Cherry")} {...a11yProps(3)} className='Tab'/>
+        <Tab label={t("Corn")} {...a11yProps(4)} className='Tab'/>
+        <Tab label={t("Grape")} {...a11yProps(5)} className='Tab'/>
+        <Tab label={t("Orange" )}{...a11yProps(6)} className='Tab'/>
+        <Tab label={t("Peach")} {...a11yProps(7)} className='Tab'/>
+        <Tab label={t("Pepper bell")} {...a11yProps(8)} className='Tab'/>
+        <Tab label={t("Potato")} {...a11yProps(9)} className='Tab'/>
+        <Tab label={t("Raspberry")} {...a11yProps(10)} className='Tab'/>
+        <Tab label={t("Soybean")} {...a11yProps(11)} className='Tab'/>
+        <Tab label={t("Squash")} {...a11yProps(12)} className='Tab'/>
+        <Tab label={t("Strawberry")} {...a11yProps(13)} className='Tab'/>
+        <Tab label={t("Tomato")} {...a11yProps(14)} className='Tab'/>
       </Tabs>
     </Box>
-    <CustomTabPanel value={value} index={0}>{ClassGenerator(apple_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>{ClassGenerator(blueberry_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>{ClassGenerator(cherry_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={3}>{ClassGenerator(corn_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={4}>{ClassGenerator(grape_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={5}>{ClassGenerator(orange_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={6}>{ClassGenerator(peach_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={7}>{ClassGenerator(pepper_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={8}>{ClassGenerator(potato_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={9}>{ClassGenerator(raspberry_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={10}>{ClassGenerator(soybean_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={11}>{ClassGenerator(squash_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={12}>{ClassGenerator(strawberry_List)}</CustomTabPanel>
-      <CustomTabPanel value={value} index={13}>{ClassGenerator(tomato_List)}</CustomTabPanel>
+     <CustomTabPanel value={value} index={0}>{ClassGenerator(date_List)}</CustomTabPanel>
+    <CustomTabPanel value={value} index={1}>{ClassGenerator(apple_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>{ClassGenerator(blueberry_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>{ClassGenerator(cherry_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={4}>{ClassGenerator(corn_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={5}>{ClassGenerator(grape_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={6}>{ClassGenerator(orange_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={7}>{ClassGenerator(peach_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={8}>{ClassGenerator(pepper_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={9}>{ClassGenerator(potato_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={10}>{ClassGenerator(raspberry_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={11}>{ClassGenerator(soybean_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={12}>{ClassGenerator(squash_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={13}>{ClassGenerator(strawberry_List)}</CustomTabPanel>
+      <CustomTabPanel value={value} index={14}>{ClassGenerator(tomato_List)}</CustomTabPanel>
 
     </Box>
     </>
